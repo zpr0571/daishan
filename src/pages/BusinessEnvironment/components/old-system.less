@@ -1,0 +1,140 @@
+// 一楼
+.borderWhite{
+  display: flex;
+  border: 2px solid #fff;
+  margin: 0.25rem;
+  padding: 0.2rem 0.4rem;
+  background-color: rgba(215, 215, 215, 0.588235294117647);
+  .firstLeftPart{
+    width: 30%;
+  }
+  .firstCenterLine{
+    width: 5px;
+    height:2.75rem;
+    background-color: black;
+  }
+  .firstRightPart{
+    width: 100%;
+    .firstRightTitle{
+      display: flex;
+      font-size: 0.35rem;
+      color: #333;
+      justify-content: center;
+      margin-bottom: 0.3rem;
+      div:last-of-type{
+        margin-left: 2rem;
+      }
+      span{
+        color: #0000FF;
+      }
+    }
+    
+    .firstRightContent{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 0.4rem;
+      .firstRightContentItem{
+        width: 2.5rem;
+        height: 1.4rem;
+        background-color: #d7d7d7;
+        box-shadow: 5px 5px 5px #00000059;
+        font-size: 0.25rem;
+        padding: 0 0.1rem;
+        >div:last-of-type{
+          font-size: 0.45rem;
+        }
+        span{
+          color: #0000FF;
+        }
+      }
+    }
+  }
+}
+
+// 二楼
+.secondPart{
+  display: flex;
+  height: 4.25rem;
+  overflow: hidden;
+  >div{
+    border: 2px solid #fff;
+    margin: 0 0.05rem;
+    padding: 0.2rem 0.4rem;
+    background-color: rgba(215, 215, 215, 0.588235294117647);
+    font-size: 0.4rem;
+    width: 40%;
+    height: 100%;
+    color: #333;
+  }
+  >div:first-of-type,>div:last-of-type{
+    width: 30%;
+    margin: 0 0.25rem;
+    padding: 0;
+    font-size: 0.35rem;
+    
+  }
+  .secondLeftPart,.secondRightPart{
+    display: flex;
+    justify-content: space-between;
+    
+    div{
+      padding: 0.2rem 0.1rem;
+      writing-mode: tb-rl;
+      text-align: end;
+      .secondRightMoney{
+        writing-mode: rl-tb;
+      }
+      span:nth-child(2){
+        writing-mode: rl-tb;
+        font-size: 0.1625rem;
+      }
+    }
+   
+  }
+ 
+}
+.thirdPart{
+  display: flex;
+  >div{
+    width: 50%;
+    border: 2px solid #fff;
+    margin: 0.25rem;
+    padding: 0.2rem 0.4rem;
+    background-color: rgba(215, 215, 215, 0.588235294117647);
+    color: #333;
+  }
+  
+    .thirdLeftTitle{
+      display: flex;
+    }
+    .thirdLeftContent{
+      display: flex;
+    }
+  
+}
+.tableHead{
+  display: flex;
+}
+
+.tableTitle{
+  display: flex;
+  flex-flow: column;
+  padding: 0.1rem 0 0 0.18rem;
+  span:first-of-type{
+    font-size: 0.18rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.25rem;
+    -webkit-background-clip: text;
+    margin-bottom: 4px;
+  }
+  span:last-of-type{
+    font-size: 0.12rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 0.17rem;
+    -webkit-background-clip: text;
+  }
+}

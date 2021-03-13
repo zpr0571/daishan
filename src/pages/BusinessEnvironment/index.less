@@ -1,0 +1,254 @@
+.bg {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/daishan/bg.png');
+  background-size: 100% auto;
+  overflow-y: auto;
+  font-family: SourceHanSansCN;
+}
+.header {
+  width: 100%;
+  height: 1.2rem;
+  background: linear-gradient(0deg, rgba(0, 108, 255, 0.3), rgba(0, 25, 155, 0.3));
+  // box-shadow: 0px -2px 8px 0px #ffffff;
+  margin-bottom: 1.47rem;
+  div {
+    width: 60%;
+    height: 2.67rem;
+    line-height: 2.67rem;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url('../../assets/daishan/headLine.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.contentTitle {
+  margin-left: 0.6rem;
+  margin-top: 0.5rem;
+  display: flex;
+  font-size: 0.5rem;
+  div {
+    width: 8rem;
+    height: 1.2rem;
+    line-height: 1rem;
+    text-align: center;
+    transform: skew(-30deg);
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+    font-size: 0.48rem;
+    border: 4px solid #77c6ef;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(119, 198, 239, 1);
+    color: #c0d2f2;
+    cursor: pointer;
+    margin-right: 0.1rem;
+    span {
+      display: inline-block;
+      transform: skew(30deg);
+      -webkit-transform: skew(30deg);
+      -moz-transform: skew(30deg);
+      -o-transform: skew(30deg);
+      -ms-transform: skew(30deg);
+    }
+  }
+  .active {
+    background: rgba(107, 143, 233, 1);
+    border: 4px solid rgba(0, 108, 193, 1);
+  }
+}
+.content {
+  height: 100%;
+}
+.contentTable {
+  width: 100%;
+  height: auto;
+  padding: 0 0.3rem;
+  display: flex;
+}
+
+.oneContent {
+  width: 9.27rem;
+  height: auto;
+  .oneBottom {
+    width: 100%;
+    display: flex;
+  }
+  .left1 {
+    width: 9.27rem;
+    height: 5.15rem;
+    position: relative;
+  }
+  .left2 {
+    width: 4.64rem;
+    height: 3.73rem;
+    position: relative;
+  }
+  .left3 {
+    width: 4.64rem;
+    height: 3.73rem;
+    position: relative;
+  }
+}
+
+.tableBg {
+  border: 8px solid transparent;
+  border-image: url('../../assets/daishan/slices.png') 15 15 stretch;
+}
+
+.tableHead {
+  display: flex;
+}
+
+.tableTitle {
+  display: flex;
+  flex-flow: column;
+  padding: 0.1rem 0 0 0.18rem;
+  span:first-of-type {
+    font-size: 0.18rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 0.25rem;
+    -webkit-background-clip: text;
+    margin-bottom: 4px;
+  }
+  span:last-of-type {
+    font-size: 0.12rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 0.17rem;
+    -webkit-background-clip: text;
+  }
+}
+
+.textCon {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0.34rem 0 0 0.25rem;
+  display: flex;
+  .leftText {
+    width: 3.8rem;
+  }
+  .rightText {
+    width: 90%;
+  }
+  .conText {
+    height: auto;
+    .comTitle {
+      font-size: 0.21rem;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #2de3e7;
+      line-height: 0.36rem;
+      letter-spacing: 2px;
+    }
+    .con1 {
+      display: flex;
+      margin-top: 0.3rem;
+      .conimg {
+        width: 0.9rem;
+        height: 0.8rem;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .con2 {
+      margin-left: 0;
+      margin-top: 0.1rem;
+    }
+    .moduleTabs {
+      margin-top: 0.13rem;
+      width: 100%;
+      display: flex;
+      .tabsOne {
+        width: 1rem;
+        height: 0.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.1rem;
+        color: #2de3e7;
+        border: 1px solid #2de3e7;
+        border-radius: 0.06rem;
+        span {
+          font-size: 0.16rem;
+          font-family: PingFangSC-Semibold, PingFang SC;
+          font-weight: 600;
+          line-height: 0.22rem;
+          letter-spacing: 2px;
+        }
+      }
+      .activeTaps {
+        color: #feb61b;
+        border-color: #feb61b;
+      }
+    }
+  }
+  .rightMap {
+    margin-left: 0.3rem;
+    display: flex;
+    align-items: center;
+    .con1 {
+      width: 4.48rem;
+      height: 4.48rem;
+      box-shadow: 0px 2px 4px 0px #2de3e7, 0px 1px 3px 0px #2de3e7;
+      border-radius: 8px;
+      // opacity: 0.39;
+      border: 1px solid #6ae0f5;
+      position: relative;
+    }
+  }
+}
+.comDesc {
+  display: flex;
+  flex-flow: column;
+  margin-left: 0.3rem;
+  span {
+    font-size: 0.16rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #2de3e7;
+    line-height: 0.2rem;
+    letter-spacing: 2px;
+  }
+}
+
+.currentTable {
+  width: 100%;
+  overflow: hidden;
+  :global {
+    .ant-table {
+      background: transparent;
+      font-size: 0.14rem;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #4bdce8;
+      line-height: 0.21rem;
+      .ant-table-thead > tr > th {
+        background: transparent;
+        font-size: 0.14rem;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.65);
+        line-height: 0.21rem;
+      }
+      .ant-table-body {
+        overflow: hidden !important;
+      }
+      .ant-table-cell-scrollbar {
+        box-shadow: none;
+      }
+    }
+  }
+}

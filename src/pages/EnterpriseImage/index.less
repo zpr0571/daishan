@@ -1,0 +1,215 @@
+.bg{
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/daishan/bg.png');
+  background-size: 100% auto;
+}
+.header{
+  width: 100%;
+  height: 1.1rem;
+  background-image: url('../../assets/daishan/headLine.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: 0.58rem;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+.headerTitle{
+  font-size: 0.39rem;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 0.54rem;
+  letter-spacing: 5px;
+  background: linear-gradient(90deg, #068CD8 0%, #5BFDF1 36%, #5AFCF1 64%, #0286D6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contentTable{
+  width: 100%;
+  height: auto;
+  padding: 0 0.3rem;
+  display: flex;
+}
+
+.oneContent{
+  width: 9.27rem;
+  height: auto;
+  .oneBottom{
+    width: 100%;
+    display: flex;
+  }
+  .left1{
+    width: 9.27rem;
+    height: 5.15rem;
+    position: relative;
+  }
+  .left2{
+    width: 4.64rem;
+    height: 3.73rem;
+    position: relative;
+  }
+  .left3{
+    width: 4.64rem;
+    height: 3.73rem;
+    position: relative;
+  }
+}
+
+.tableBg{
+  border:8px solid transparent;
+  border-image:url('../../assets/daishan/slices.png') 15 15 stretch;
+}
+
+
+.tableHead{
+  display: flex;
+}
+
+.tableTitle{
+  display: flex;
+  flex-flow: column;
+  padding: 0.1rem 0 0 0.18rem;
+  span:first-of-type{
+    font-size: 0.18rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.25rem;
+    -webkit-background-clip: text;
+    margin-bottom: 4px;
+  }
+  span:last-of-type{
+    font-size: 0.12rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 0.17rem;
+    -webkit-background-clip: text;
+  }
+}
+
+.textCon{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0.34rem 0 0 0.25rem;
+  display: flex;
+  .leftText{
+    width: 3.8rem;
+  }
+  .rightText{
+    width: 90%;
+  }
+  .conText{
+    height: auto;
+    .comTitle{
+      font-size: 0.21rem;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #2DE3E7;
+      line-height: 0.36rem;
+      letter-spacing: 2px;
+    }
+    .con1{
+      display: flex;
+      margin-top: 0.3rem;
+      .conimg{
+        width: 0.9rem;
+        height: 0.8rem;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .con2{
+      margin-left: 0;
+      margin-top: 0.1rem;
+    }
+    .moduleTabs{
+      margin-top: 0.13rem;
+      width: 100%;
+      display: flex;
+      .tabsOne{
+        width: 1rem;
+        height: 0.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.1rem;
+        color: #2DE3E7;
+        border: 1px solid #2DE3E7;
+        border-radius: 0.06rem;
+        span{
+          font-size: 0.16rem;
+          font-family: PingFangSC-Semibold, PingFang SC;
+          font-weight: 600;
+          line-height: 0.22rem;
+          letter-spacing: 2px;
+        }
+      }
+      .activeTaps{
+        color: #FEB61B;
+        border-color: #FEB61B;
+      }
+    }
+  }
+  .rightMap{
+    margin-left: 0.3rem;
+    display: flex;
+    align-items: center;
+    .con1{
+      width: 4.48rem;
+      height: 4.48rem;
+      box-shadow: 0px 2px 4px 0px #2DE3E7, 0px 1px 3px 0px #2DE3E7;
+      border-radius: 8px;
+      // opacity: 0.39;
+      border: 1px solid #6AE0F5;
+      position: relative;
+    }
+  }
+}
+.comDesc{
+  display: flex;
+  flex-flow: column;
+  margin-left: 0.3rem;
+  span{
+    font-size: 0.16rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #2DE3E7;
+    line-height: 0.2rem;
+    letter-spacing: 2px;
+  }
+}
+
+
+.currentTable{
+  width: 100%;
+  overflow: hidden;
+  :global {
+    .ant-table{
+      background: transparent;
+      font-size: 0.14rem;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #4BDCE8;
+      line-height: 0.21rem;
+      .ant-table-thead > tr > th{
+        background: transparent;
+        font-size: 0.14rem;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.65);
+        line-height: 0.21rem;
+      }
+      .ant-table-body{
+        overflow: hidden!important;
+      }
+      .ant-table-cell-scrollbar{
+        box-shadow: none;
+      }
+    }
+  }
+}
