@@ -43,9 +43,7 @@ export default () => {
             </div>
             <div className={styles.borderBlue}>
               <div className={styles.environMap}>
-
-              <Chart1/>
-
+                <Chart1/>
               </div>
             </div>
           </div>

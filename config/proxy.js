@@ -14,7 +14,7 @@ export default {
       pathRewrite: { '^/accounts': '' },
     },
     '/ds': {
-      target: 'http://127.0.0.1:5601/emp/', // 测试地址
+      target: 'http://172.1.2.127:5601/emp/', // 测试地址
       changeOrigin: true,
       pathRewrite: { '^/ds': '' },
     },

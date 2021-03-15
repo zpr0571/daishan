@@ -11,10 +11,10 @@ export default () => {
   const tableDataApi = useRequest(() => companyIndustry({}), {
     refreshDeps: [],
     onSuccess: (result, params) => {
-      const { data, status, remsg } = result;
-      console.log("111111",result.data,result.status,result.remsg);
+      const  data  = result.result;
+      console.log(data);
       let companyTotal = 0;
-      if (status = 0) {
+      if (result.status ===0 ) {
         data.map(d => {
           companyTotal+=parseFloat(d.companyCount);
           d.companyCount = parseFloat(d.companyCount);
@@ -37,7 +37,7 @@ export default () => {
       container: 'Chart1',
       autoFit: true,
       height: 500,
-      padding: [50, 20, 15, 70],
+      // padding: [50, 20, 15, 70],
     });
 
     chart.data(data);
@@ -54,9 +54,13 @@ export default () => {
     });
 
     chart.legend({
-      position: 'left',
-      offsetX: 20,
-      offsetY: 20,
+      position: 'right',
+      offsetX:-100,
+      textStyle:{
+        fontSize: 32,//字体大小
+        color: '#ffffff'//字体颜色
+      },
+
     });
 
     chart.tooltip({
@@ -76,11 +80,10 @@ export default () => {
           return `${data.industry}: ${percent * 100}%`;
         },
         style: {
-          fontSize: 12,
-          fontFamily: 'PingFangSC-Regular, PingFang SC',
-          fontWeight: 400,
-          fill: "rgba(255, 255, 255, 0.65)",
-          lineHeight: 12,
+          fontSize: 37,
+          fontFamily: 'SourceHanSansCN-Normal',
+          fill: "rgba(255, 255, 255, 1)",
+          lineHeight: 45,
         }
       };
     })
@@ -103,10 +106,6 @@ export default () => {
 
   return (
     <>
-      <div>
-        营商环境驾驶舱------指标体系
-       
-      </div>
       <div
         id="Chart1"
         style={{

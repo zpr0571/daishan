@@ -3,8 +3,26 @@ import '@/utils/flexible';
 
 import styles from './system.less'
 
+import { useRequest } from 'ahooks';
+import { businessServiceWindow } from '../service'
 
 export default () => {
+
+  // 最美服务列表
+ 
+
+  const windowData = useRequest(() => businessServiceWindow({}), {
+    refreshDeps: [],
+    onSuccess: (result, params) => {
+      const  data  = result.result;
+      console.log(data);
+      if (result.status ===0 ) {
+      
+      } else {
+        message.error('请求出错')
+      }
+    },
+  });
 
   return (
     <>
@@ -30,8 +48,6 @@ export default () => {
                     </tr>
                   </thead>
                   <tbody>
-
-
                     <tr>
                       <td>开办企业</td>
                       <td>10</td>

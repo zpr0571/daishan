@@ -80,7 +80,7 @@
     "react-helmet-async": "^1.0.4",
     "react-router-dom": "^5.2.0",
     "swiper": "^6.4.10",
-    "umi": "^3.2.14",
+    "umi": "^3.4.2",
     "umi-request": "^1.0.8",
     "use-merge-value": "^1.0.1"
   },

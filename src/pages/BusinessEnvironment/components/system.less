@@ -2,6 +2,7 @@
 .indicatorContainter {
   display: flex;
   font-size: 0.36rem;
+  margin: 0 0.6rem;
   > div:last-of-type {
     margin-left: auto;
   }
@@ -18,8 +19,8 @@
   }
   .leftPart {
     .leftFirstPart {
-      margin: 0 0.6rem;
       display: flex;
+
       .task {
         width: 9.32rem;
         height: 8.44rem;
@@ -54,17 +55,17 @@
       }
       .environMap {
         width: 17.02rem;
+        height: 8.44rem;
+        position: relative;
       }
     }
     .leftSecondPart {
-      margin: 0 0.6rem;
-      margin-bottom: 0.8rem;
       display: flex;
       .leftSecondOne {
         width: 9.32rem;
         height: 7.43rem;
         overflow-y: auto;
-        font-size: 0.96rem;
+        font-size: 0.42rem;
       }
       .leftSecondTwo,
       .leftSecondThree {
@@ -120,10 +121,11 @@
 // 工作体系
 .workContainter {
   font-size: 0.36rem;
+  margin: 0 0.6rem;
   color: #fff;
   .firstPart {
     display: flex;
-    margin: 0 0.6rem;
+    // margin: 0 0.6rem;
     .borderBlue {
       border: 2px solid #006bc1;
       margin: 0.42rem 0.42rem 0 0;
@@ -158,7 +160,6 @@
       }
     }
     .policyContent {
-      margin: 0 0.6rem;
       margin-bottom: 0.8rem;
       .policyItem {
         display: flex;
@@ -185,10 +186,12 @@
   .firstPart {
     display: flex;
     margin: 0 0.6rem;
+    margin-right: 0;
     .borderBlue {
       border: 2px solid #006bc1;
       margin: 0.42rem 0.42rem 0 0;
       .firstLeft {
+        width: 24.293rem;
         height: 8.86rem;
         overflow-y: auto;
         color: #fff;
@@ -199,6 +202,7 @@
         .firstTitle {
           display: flex;
           font-size: 0.36rem;
+          margin-bottom: 0.8rem;
           div:last-of-type {
             margin-left: auto;
             cursor: pointer;
@@ -206,24 +210,31 @@
         }
         .firstContent {
           width: 100%;
+          table {
+            width: 100%;
+            td {
+              height: 1rem;
+              text-align: center;
+            }
+            td:first-of-type {
+              text-align: left;
+            }
+            thead td:last-of-type {
+              text-align: right;
+            }
+          }
           thead {
             font-size: 0.4rem;
           }
+
           tbody {
-            tr {
-              font-size: 0.48rem;
-              td {
-                text-align: center;
-              }
-              td:first-of-type {
-                text-align: left;
-              }
-            }
+            font-size: 0.48rem;
           }
         }
       }
     }
     .firstRightPart {
+      width: 11.72rem;
       height: 8.86rem;
       overflow-y: auto;
       color: #fff;
@@ -233,7 +244,7 @@
       padding: 0.73rem 0.5rem;
       .firstRightTitle {
         font-size: 0.36rem;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.6rem;
       }
       .phoneItem {
         display: flex;
@@ -250,7 +261,7 @@
         }
       }
       .firstRightBtn {
-        width: 107.2rem;
+        width: 10.72rem;
         height: 1.6rem;
         line-height: 1.6rem;
         margin: 0 auto;
@@ -267,8 +278,10 @@
   .secondPart {
     width: 100%;
     display: flex;
-    margin: 0 0.6rem;
-    margin-bottom: 0.8rem;
+    // margin: 0 0.6rem;
+    .borderBlue:first-child {
+      margin-left: 0.6rem;
+    }
     .borderBlue {
       border: 2px solid #006bc1;
       margin: 0.42rem 0.42rem 0 0;
@@ -286,7 +299,8 @@
         font-size: 0.36rem;
       }
       .secondLeftPart {
-        // width: 117.2rem;
+        width: 11.72rem;
+        height: 7.2rem;
         text-align: center;
         .secondLeftRank {
           width: 100%;
@@ -302,7 +316,8 @@
         }
       }
       .secondCenterPart {
-        // width: 117.2rem;
+        width: 11.72rem;
+        height: 7.2rem;
         .secondListTitle {
           display: flex;
           font-size: 0.48rem;
@@ -325,6 +340,8 @@
         }
       }
       .secondRightPart {
+        width: 11.72rem;
+        height: 7.2rem;
         .phoneItem {
           display: flex;
           align-items: center;

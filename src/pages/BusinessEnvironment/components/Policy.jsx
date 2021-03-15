@@ -3,7 +3,6 @@ import '@/utils/flexible';
 
 import styles from './system.less'
 
-
 export default () => {
 
   return (

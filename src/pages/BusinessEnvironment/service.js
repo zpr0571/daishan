@@ -23,6 +23,16 @@ export async function townsRevenue(params) {
 }
 
 /**
+ * 最美营商服务列表
+ * @param {*}} params
+ */
+export async function businessServiceWindow(params) {
+  return request(`/ds/businessServiceWindow/list`, {
+    method: 'GET',
+  });
+}
+
+/**
  * 行业分布
  * @param {*}} params
  */
